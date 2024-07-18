@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Button from "@components/Button";
+import { CommentType } from "types/types";
 
-function CommentItem({ data }) {
+function CommentItem({ data }: CommentType) {
   const { user, content, createdAt } = data;
 
   return (

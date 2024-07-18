@@ -1,7 +1,8 @@
+import { CommentType } from "types/types";
 import CommentItem from "./CommentItem";
 import CommentNew from "./CommentNew";
 
-function CommentList({ data }) {
+function CommentList({ data }: CommentType) {
   const commentItems = data?.map((item) => {
     return <CommentItem key={item._id} data={item} />;
   });

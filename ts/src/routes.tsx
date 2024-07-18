@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <CommentList />,
+            element: <CommentList data={[]} />,
           },
         ],
       },
